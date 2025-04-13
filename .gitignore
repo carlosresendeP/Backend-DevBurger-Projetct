@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lockfiles (escolha entre npm ou yarn)
+package-lock.json
+# yarn.lock
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor config
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# Uploads (dependendo do uso, geralmente não versionamos)
+uploads/
+
+# Sequelize config files (se for gerar arquivos temporários)
+*.sqlite
+*.sqlite3
+*.db
