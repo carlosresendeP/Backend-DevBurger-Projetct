@@ -48,6 +48,7 @@ A API inclui autenticação, gerenciamento de produtos ( criar, deletar, atualiz
 
 npm install
 
+---
 
 ## env
 
@@ -58,6 +59,7 @@ DB_PASS=sua_senha
 DB_NAME=nome_do_banco
 JWT_SECRET=sua_chave_secreta
 
+---
 
 npm run dev
 # ou
