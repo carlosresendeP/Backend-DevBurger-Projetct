@@ -32,3 +32,5 @@ uploads/
 *.sqlite
 *.sqlite3
 *.db
+# Arquivos de configuração do Sequelize
+config/auth.js
