@@ -86,7 +86,7 @@ e inicie
 
 ### 4️⃣ Gerenciar o PostgreSQL com Beekeeper Studio
 Para facilitar a visualização e gerenciamento do banco de dados PostgreSQL:
-- Baixe e instale o Beekeeper Studio
+- Baixe e instale o <a href='https://www.beekeeperstudio.io/'>Beekeeper Studio</a>
 - Crie uma nova conexão com os dados:
 
 ```bash
