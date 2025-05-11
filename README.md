@@ -67,6 +67,9 @@ docker run --name devburger-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 54
 ### 3️⃣ Configure o banco de dados PostgreSQL via Docker
 
 📌 Esse comando cria e inicia um container com o nome devburger-postgres, senha mysecretpassword e porta 5432.
+
+troque o 'mysecretpassword' pela sua senha
+
 Para rodar o container PostgreSQL:
 ```bash
 docker run --name devburger-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
@@ -81,7 +84,22 @@ ou
 acesse o Docker desktop
 e inicie
 
-### 4️⃣ Configure o MongoDB Compass
+### 4️⃣ Gerenciar o PostgreSQL com Beekeeper Studio
+Para facilitar a visualização e gerenciamento do banco de dados PostgreSQL:
+- Baixe e instale o Beekeeper Studio
+- Crie uma nova conexão com os dados:
+
+```bash
+Host: localhost  
+Port: 5432  
+Database: postgres  
+Username: postgres  
+Password: (a senha definida no Docker, ex: mysecretpassword)
+```
+
+Pronto — você conseguirá acessar e visualizar suas tabelas facilmente por ele.
+
+### 5️⃣ Configure o MongoDB Compass
 
 - Baixe e instale o MongoDB Compass
 - Abra o Compass e conecte na URL padrão:
@@ -92,7 +110,7 @@ mongodb://localhost:27017
 - Crie um banco chamado devburger
 - Dentro dele, crie a coleção pedidos
 
-### 5️⃣ Configuração do Stripe
+### 6️⃣ Configuração do Stripe
 
 No arquivo .env:
 
@@ -101,7 +119,7 @@ STRIPE_SECRET_KEY=sua_chave_da_stripe
 ```
 
 
-### 6️⃣ Configure o arquivo auth.js
+### 7️⃣ Configure o arquivo auth.js
 
 No diretório src/config, crie o arquivo auth.js:
 
@@ -113,7 +131,7 @@ export default {
 
 ```
 
-### 7️⃣ Inicie o projeto
+### 8️⃣ Inicie o projeto
 ```bash
 npm run dev
 ```
